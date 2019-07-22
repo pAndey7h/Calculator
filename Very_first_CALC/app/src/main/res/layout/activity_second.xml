@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age Calculator"
+        android:textSize="50dp"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the Birth Date"
+            android:layout_margin="7dp"
+            android:textSize="29dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:background="#c19393"
+            />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/bd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date(dd)"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/bm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Month(mm)"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Year(yyyy)"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_margin="7dp"
+        android:layout_height="wrap_content"
+        android:text="Enter the Current Date"
+        android:textSize="29dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:background="#c19393"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/cd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date(dd)"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/cm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Month(mm)"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/cy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Year(yyyy)"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Calculate Age"/>
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:hint="CALCULATED AGE"
+        android:gravity="center"/>
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:layout_marginBottom="20dp"
+    android:text="Press for Calculator"
+    android:id="@+id/back"
+    android:textSize="15sp"/>
+
+</LinearLayout>
